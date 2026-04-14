@@ -1,6 +1,7 @@
 <script>
     let count = $state(0)
-    let doubled = count * 2
+    let multiplier = $state(2)
+    let doubled = $derived(count * 2)
 </script>
 
 <h1>Welcome to SvelteKit</h1>
@@ -10,6 +11,9 @@
     clicks: {count}
 </button>
 
+<button on:click={() => multiplier++ }>
+    multiplier: {multiplier}
+</button>
 <span>doubled is {doubled}</span>
 <style>
     h1 {
