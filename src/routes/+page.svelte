@@ -1,5 +1,6 @@
 <script>
-    let count = $state(0);
+    let count = $state(0)
+    let doubled = count * 2
 </script>
 
 <h1>Welcome to SvelteKit</h1>
@@ -9,6 +10,7 @@
     clicks: {count}
 </button>
 
+<span>doubled is {doubled}</span>
 <style>
     h1 {
         color: aqua;
