@@ -1,7 +1,8 @@
 <script>
+    import Canvas from "$lib/componets/Canvas.svelte";
     import Counter from "../lib/componets/Counter.svelte";
-
-    let count = $state{5}
+    
+    let count = $state(5)
 
     $inspect(count);
 </script>
@@ -10,7 +11,10 @@
 <p>Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p>
 
 <Counter bind:initialCount={count}/>
+
 <p>count from parent is {count}</p>
+
+<Canvas />
 <style>
     h1 {
         color: aqua;

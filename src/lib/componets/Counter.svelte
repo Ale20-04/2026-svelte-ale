@@ -4,7 +4,7 @@
     let doubled = $derived(count * 2)
 </script>
 
-<button on:click={() => count++ }>
+<button onclick={() => count++ }>
     clicks: {count}
 </button>
 
