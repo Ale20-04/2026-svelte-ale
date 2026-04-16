@@ -11,7 +11,7 @@
          context.clearRect(0, 0, canvas.width, canvas.height)
     
          context.fillStyle = color
-         context.clearRect(0, 0, size, size)
+         context.fillRect(0, 0, size, size)
     })
 
 
@@ -24,11 +24,11 @@
 
     <nav>
         <label>
-            Size: <input type="range">
+            Size: <input type="range" bind:value={size}>
         </label>
         
         <label>
-            Color: <input type="color">
+            Color: <input type="color" bind:value={color}>
         </label>
     
     </nav>
