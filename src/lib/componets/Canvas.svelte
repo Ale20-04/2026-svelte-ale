@@ -13,7 +13,6 @@
          context.fillStyle = untrack(() => color)
          context.fillRect(0, 0, size, size)
     })
-
 </script>
 
 <h3>Canvas</h3>
