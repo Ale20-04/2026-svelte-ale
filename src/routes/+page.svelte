@@ -13,7 +13,9 @@
 <Counter bind:initialCount={count}/>
 
 {#if count > 10 && count < 20}
-<p>count from parent is {count}</p>
+    <p>count from parent is {count}</p>
+{:else}
+    <p>count is not in range</p>
 {/if}
 
 <Canvas />
